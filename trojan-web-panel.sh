@@ -44,7 +44,7 @@ if test -s /etc/systemd/system/trojan-web.service; then
 	green " "
 	green " "
 	green "================================="
-	 blue "  检测到Trojan面板服务，开始配置"
+	 blue "  Layanan panel Trojan terdeteksi, mulai konfigurasi"
 	green "================================="
 	sleep 2s
 	$systemPackage update -y
@@ -55,13 +55,13 @@ if test -s /etc/nginx/nginx.conf; then
 	rm -rf /etc/nginx/nginx.conf
   wget -P /etc/nginx https://raw.githubusercontent.com/V2RaySSR/Trojan_panel_web/master/nginx.conf
 	green "================================="
-	blue "     请输入Trojan绑定的域名"
+	blue "     Input Your Domain :"
 	green "================================="
 	read your_domain
   sed -i "s/localhost/$your_domain/;" /etc/nginx/nginx.conf
 	green " "
 	green "================================="
-	 blue "    开始下载伪装站点源码并部署"
+	 blue "    Mulai Menginstall Paket "
 	green "================================="
 	sleep 2s
 	rm -rf /usr/share/nginx/html/*
