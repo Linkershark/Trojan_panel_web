@@ -120,21 +120,21 @@ trojan_install(){
 start_menu(){
   clear
 	green "=========================================================="
-   blue " 本脚本支持：Debian9+ / Ubuntu16.04+ / Centos7+"
-	 blue " 网站：www.v2rayssr.com （已开启禁止国内访问）"
-	 blue " YouTube频道：波仔分享"
-	 blue " 本脚本禁止在国内任何网站转载"
+   blue " OS Supported：Debian9+ / Ubuntu16.04+ / Centos7+"
+	 blue " web：www.v2rayssr.com （Disable domestic access）"
+	 blue " YouTube Channel：波仔分享"
+	 blue " This script is prohibited from being reproduced on any domestic website"
 	green "=========================================================="
-   blue " 简介：一键更改 Trojan-Panel 面板端口并设置伪装站点"
+   blue " Introduction: Change Trojan-Panel port and setup site with one click"
 	green "=========================================================="
-	  red " 运行本脚本之前请确认已经安装Jrohy大神的面板程序"
+	  red " Before running this script, please make sure that the panel program of Jrohy has been installed"
 	green "=========================================================="
-	 blue " 1. Jrohy大神的 Trojan 多用户管理部署程序"
-   blue " 2. 更改 Trojan 面板端口并设置伪装站点"
-   blue " 3. 安装 BBRPlus4 合一加速"
-   blue " 0. 退出脚本"
+	 blue " 1. Install"
+   blue " 2. Change Port Trojan"
+   blue " 3. Install BBRPlus4-in-1 Accelerator"
+   blue " 0. Exit"
     echo
-    read -p "请输入数字:" num
+    read -p "Input Number :" num
     case "$num" in
     1)
 		trojan_install
@@ -150,7 +150,7 @@ start_menu(){
 		;;
 		*)
 	clear
-	echo "请输入正确数字"
+	echo "Input The Valid number"
 	sleep 2s
 	start_menu
 	;;
